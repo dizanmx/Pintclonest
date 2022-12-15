@@ -16,6 +16,11 @@ header {
 .logopin {
 
     height: 70px;
+   }
+
+button {
+    border-radius: 25px;
+    height: 40px;
 }
 
 main {
@@ -24,8 +29,15 @@ main {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-gap: 1 fr;
+}
+
+.grid-item-header{
+    
+    display: flex;
+    align-items:center;
+    justify-content: left;
 }
 
 .grid-item {
@@ -34,9 +46,16 @@ main {
     align-items: center;
 }
 
+.grid-item img:hover {
+    width: 65%;
+    opacity: 0.5;
+}
+
 .grid-item img {
     width: 65%;
+    opacity: 1.0;
 }
+
 
 .grid-item p {
     margin: 10px 0 0;
